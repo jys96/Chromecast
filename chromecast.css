@@ -1,0 +1,481 @@
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto','Nanum Gothic', sans-serif;
+}
+body{
+	width: 100%;
+	position: relative;
+	color: #737373;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+li{
+	list-style-type: none;
+}
+h1{
+	font-size: 44px;
+}
+
+.g_f{
+	font-family: 'Open Sans', sans-serif;
+}
+.width_half{
+	width: 50%;
+	float: left;
+}
+
+nav{
+	width: 100%;
+	height: 82px;
+	line-height: 82px;
+	position: fixed;
+	z-index: 999;
+	transition: all 0.3s ease;
+}
+nav #nav_wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+nav #nav_wrap #logo{
+	width: 178px;
+	height: 82px;
+	float: left;
+	cursor: pointer;
+}
+nav #nav_wrap #logo img{
+	width: 28px;
+	margin-right: 14px;
+	margin-top: 27px;
+	float: left;
+}
+nav #nav_wrap #logo .g_f{
+	width: calc(100% - 42px);
+	float: left;
+	font-size: 22px;
+	color: #5f6368;
+}
+nav #nav_list{
+	width: calc(100% - 356px);
+	float: left;
+}
+nav #nav_list ul{
+	width: 540px;
+	height: 82px;
+	margin: 0 auto;
+}
+nav #nav_list ul li{
+	width: 85px;
+	display: inline-block;
+	float: left;
+	margin-right: 50px;
+	text-align: center;
+	color: #737373;
+}
+nav #nav_list ul li a:hover{
+	font-weight: 800 !important;
+}
+nav #nav_btn{
+	width: 178px;
+	float: right;
+}
+nav #nav_btn button{
+	height: 35px;
+	line-height: 35px;
+	padding: 0 17px;
+	background-color: rgba(255,255,255,0);
+	border: solid 1px #7e7e7e;
+	border-radius: 30px;
+	cursor: pointer;
+	color: #5f6368;
+}
+nav #nav_btn button:hover{
+	color: #fff;
+	background-color: #7e7e7e;
+	transition: all 0.5s ease;
+}
+
+#wrap{
+	width: 100%;
+	overflow: hidden;
+}
+section{
+	width: 100%;
+	height: 524px;
+	display: block;
+}
+#first{
+	background-image: url(img/1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#first div{
+	width: 50%;
+	position: relative;
+	top: 40%;
+}
+#first div h1{
+	margin-left: 25%;
+	position: relative;
+	line-height: 70px;
+	opacity: 0;
+}
+#second{
+	overflow: hidden;
+	position: relative;
+}
+#second ul li{
+	width: 100%;
+	height: 524px;
+	position: absolute;
+}
+#second ul li .width_half{
+	height: 524px;
+}
+#second .bg_phone{
+	background-image: url(img/netflix_phone.png);
+	background-repeat: no-repeat;
+	background-size: 65%;
+    background-position-x: right;
+    position: relative;
+    left: 100%;
+}
+#second .bg_notebook{
+	background-image: url(img/netflix_notebook.png);
+	background-repeat: no-repeat;
+	background-size: 65%;
+    background-position-x: right;
+    position: relative;
+    left: 100%;
+}
+#second .bg_tablet{
+	background-image: url(img/netflix_tablet.png);
+	background-repeat: no-repeat;
+	background-size: 73%;
+    background-position-x: right;
+    position: relative;
+    left: 100%;
+}
+#second ul li .slide{
+	opacity: 0;
+}
+#second ul li .text_box{
+	margin-top: 23%;
+	margin-left: 25%;
+    width: max-content;
+}
+#second ul li .text_box h1{
+	margin-bottom: 40px;
+}
+#third{
+	background-color: #f2f5f6;
+	text-align: center;
+	font-size: 17px;
+	line-height: 36px;
+	position: relative;
+}
+#third h1{
+	padding-top: 80px;
+	color: #000000;
+	margin-bottom: 50px;
+}
+#third #ai{
+	width: 410px;
+	margin: 0 auto;
+	margin-top: 35px;
+}
+#third #ai #icon{
+	width: 55px;
+	height: 55px;
+	border-radius: 50px;
+	background-color: #fff;
+	display: inline-block;
+	margin-right: 15px;
+	float: left;
+}
+#third #ai #icon img{
+	width: 100%;
+}
+#third #ai #text_baloon{
+	width: 302px;
+	padding: 5px 18px;
+	color: #555;
+	background-color: #fff;
+	display: inline-block;
+	border-radius: 15px;
+	float: left;
+	margin-top: 5px;
+}
+#third #googlehome{
+	width: 30%;
+	position: absolute;
+	top: -3%;
+	left: 11%;
+}
+#third #googlehome img{
+	width: 100%;
+}
+#fourth{
+	background-color: #000000;
+	color: #7e7e7e;
+}
+#fourth #fourth_wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+#fourth #blueprint{
+	height: 524px;
+    background-image: url(img/10.jpg);
+    background-size: cover;
+    background-position: -50px -40px;
+    position: relative;
+}
+#fourth #blueprint div{
+	display: inline-block;
+}
+#fourth #blueprint div:nth-child(1){
+	position: absolute;
+    top: 220px;
+    left: 20px;
+}
+#fourth #blueprint div:nth-child(2){
+	position: absolute;
+    top: 136px;
+    left: 270px;
+}
+#fourth #blueprint div:nth-child(3){
+	position: absolute;
+    top: 338px;
+    left: 307px;
+}
+#fourth #blueprint div:nth-child(4){
+	position: absolute;
+    top: 420px;
+    left: 383px;
+}
+#fourth #info_box{
+	line-height: 35px;
+	margin-top: 10%;
+}
+#fourth #info_box button{
+	width: 145px;
+	height: 43px;
+	border: solid 2px #7e7e7e;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #7e7e7e;
+	background-color: rgba(0,0,0,0);
+	cursor: pointer;
+	margin-top: 22px;
+}
+#fourth #info_box button:hover{
+	background-color: #7e7e7e;
+	color: #000000;
+	transition: all 0.3s Linear Out;
+}
+#fourth #popup{
+	display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    color: #fff;
+    z-index: 10001;
+    padding-top: 150px;
+}
+#fourth #popup #close{
+	width: 305px;
+	height: 0;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	text-align: right;
+	cursor: pointer;
+	font-size: 30px;
+	position: relative;
+}
+#fourth #popup #close{
+	position: relative;
+	left: 40px;
+	top: -30px;
+}
+#fourth #popup table {
+	width: auto;
+	margin: 0 auto;
+	border-collapse: collapse;
+    border: solid 3px #7e7e7e;
+}
+#fourth #popup th, #fourth #popup td{
+    border: solid 2px #7e7e7e;
+    padding: 8px 18px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+}
+#fourth #popup td div{
+	font-size: 12px;
+	font-weight: 400;
+	margin-top: 7px;
+}
+#fifth{
+	overflow: hidden;
+}
+#fifth #fifth_text_box h1{
+	width: 535px;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+#fifth #fifth_text_box .fifth_text{
+	margin-bottom: 50px;
+	margin-left: 208px;
+	opacity: 0.3;
+	transition: all 0.5s ease;
+}
+#fifth .circle{
+	width: 28px;
+	height: 28px;
+	border: solid 1px rgba(126,126,126,1);
+	border-radius: 30px;
+	text-align: center;
+	line-height: 30px;
+	display: inline-block;
+	margin-right: 10px;
+	transition: all 0.5s ease;
+}
+#fifth #fifth_img_box{
+	position: relative;
+}
+#fifth #fifth_img_box ul li{
+	height: 524px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 0.5s ease;
+	overflow: hidden;
+}
+#fifth #fifth_img_box ul li img{
+	height: inherit;
+}
+#sixth{
+
+}
+#sixth h1{
+	padding-top: 80px;
+	text-align: center;
+	margin-bottom: 48px;
+}
+#sixth #sixth_wrap{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#sixth #sixth_wrap div{
+	width: calc((100% - 115px) / 6);
+	margin-right: 23px;
+	display: inline-block;
+	float: left;
+}
+#sixth #sixth_wrap div:nth-child(6){
+	margin-right: 0px;
+}
+#sixth #sixth_wrap div img{
+	width: 100%;
+}
+#sixth button{
+	width: 95px;
+	height: 38px;
+	background-color: rgba(255,255,255,0);
+	border: solid 2px #448aff;
+	border-radius: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #448aff;
+    margin-left: calc(50% - 47.5px);
+    margin-top: 45px;
+    cursor: pointer;
+}
+#sixth button:hover{
+	background-color: #448aff;
+	color: #fff;
+	transition: all 0.3s ease;
+}
+#seventh{
+	background-color: #fafafa;
+	padding: 45px 0;
+	height: auto;
+}
+#seventh #seventh_wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+#seventh #seventh_wrap p{
+	margin-bottom: 25px;
+	font-size: 12px;
+}
+#seventh #seventh_wrap p a{
+	color: #4285f4;
+}
+footer{
+	width: 1200px;
+	margin: 0 auto;
+	padding: 49px 0 100px 0;
+	font-size: 10px;
+	color: #3c4043;
+}
+footer div{
+	width: 100%;
+	display: block;
+}
+footer div ul li{
+	display: inline-block;
+	float: left;
+}
+footer #top{
+	overflow: hidden;
+	border-bottom: solid 1px #eeeeee;
+	padding: 15px 0px 10px 0;
+	font-size: 12px;
+	line-height: 30px;
+}
+footer #top #store_logo{
+	width: 166px;
+	display: inline-block;
+	margin-right: 30px;
+	float: left;
+}
+footer #top #store_logo img{
+	width: 100%;
+}
+footer #top ul li{
+	margin-right: 33px;
+}
+footer #middle{
+	padding: 15px 0 5px 0;
+	overflow: hidden;
+}
+footer #middle ul{
+	display: inline-block;
+	height: 24px;
+}
+footer #middle ul li{
+	margin-right: 25px;
+}
+footer #middle #sns_icon{
+	float: right;
+	display: inline-block;
+    width: initial;
+}
+footer #middle #sns_icon i{
+	font-size: 20px;
+	margin-left: 10px;
+}
+footer #bottom{
+	overflow: hidden;
+	padding: 15px 0 0 0; 
+}
